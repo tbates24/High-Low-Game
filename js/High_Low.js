@@ -11,9 +11,9 @@ const backdropElement = document.getElementById("backdrop");
 const modalLinkElements = document.querySelectorAll(".info-modal");
 let infoModal;
 
-var dealer;
-var randNum; //Dealer's number
-var pNum; //Player's Number
+let dealer;
+let randNum; //Dealer's number
+let pNum; //Player's Number
 
 function randomInt(min, max) {
   min = Math.ceil(min);
@@ -79,13 +79,13 @@ window.onload = function () {
 };
 
 function animateSequence() {
-  var a = document.getElementsByClassName("sequence");
-  for (var i = 0; i < a.length; i++) {
-    var $this = a[i];
-    var letter = $this.innerHTML;
+  let a = document.getElementsByClassName("sequence");
+  for (let i = 0; i < a.length; i++) {
+    let $this = a[i];
+    let letter = $this.innerHTML;
     letter = letter.trim();
-    var str = "";
-    var delay = 100;
+    let str = "";
+    let delay = 100;
     for (l = 0; l < letter.length; l++) {
       if (letter[l] != " ") {
         str +=
@@ -114,10 +114,8 @@ function presentInfoModal(event) {
   toggleBackdrop();
   infoModal = document.createElement("div");
   infoModal.classList.add("modal");
-  infoModal.innerHTML = `
-    <h2>Sorry, you need to choose a number between 1 and 100, otherwise i wont work</h2>
-   
-  `;
+  infoModal.innerHTML = ``;
+
   const closeButton = document.createElement("button");
   closeButton.addEventListener("click", hideInfoModal);
   closeButton.textContent = "Okay";
