@@ -1,0 +1,102 @@
+html {
+  width: 100%;
+  height: 100%;
+  background-color:black ;
+}
+
+h1 { /*"High-Low*/
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: whitesmoke;
+  text-shadow: blue 2px 2px;
+}
+
+h2 { /*Guess an integer...*/
+  font-size: 45px;
+  color: whitesmoke;
+  text-shadow: red 2px 2px;
+}
+
+h4 {/*Refresh directions*/
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: whitesmoke;
+    text-shadow: purple 2px 2px;
+  }
+
+#high-btn{/*High Button*/
+  background-color: red; /* Red */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  box-shadow:0 12px 16px 0 rgba(223, 123, 123, 0.856),0 17px 50px 0 rgba(196, 66, 66, 0.918);
+}
+#low-btn{/*Low Button*/
+  background-color: blue; /* Blue */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  box-shadow: 0 12px 16px 0 rgba(56, 114, 207, 0.959),0 17px 50px 0 rgba(43, 163, 233, 0.952);
+}
+
+#start-game-btn{ /* Start Game Button */
+    background-color: purple; /* Purple */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/*-----------------------------------------Animations for HTML-----------------------------------------------------*/
+
+/*High-Low Game*/
+.game-name, .game-name span {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.hilowanimation span {animation-name: hilowanimation} 
+@keyframes hilowanimation{
+            0% {
+                transform: translate(0px, 80px);
+                opacity: 0
+            }
+            50% {
+                transform: translate(10px, -50px);   
+    }
+}
+
+
+/*Game Directions*/
+.game-direction, .game-direction span { 
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.diranimation span {animation-name: diranimation}
+@keyframes diranimation{
+            0% {
+                transform: translate(0px, 80px);
+                opacity: 0
+            }
+            50% {
+                transform: translate(10px, -50px);   
+    }
+}

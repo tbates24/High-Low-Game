@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta http-equiv="refresh" content="30">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi-Low Game</title>
+    <link rel="stylesheet" href="css/HiLow.css">
+    <script src="js/High_Low.js" defer></script>
+</head>
+<body>
+    <h1 class="game-name sequence hilowanimation">High-Low Game</h1>
+    <button id="start-game-btn" onClick="window.location.reload();"><h3>Start Game!</h3></button><br><h4>(click "Start Game!" button to restart) </h4>
+    <br><br>
+
+
+ <div>
+     <form id="game-form">
+    <input name="dealerInput" type="text" id="input-bar" hidden="true" value="" ><h2 class="game-direction sequence diranimation">Guess an integer (whole number) between 1 and 100 , then guess if your number is higher or lower than the dealer's number:</h2><<h4>(If you try to put anything higher, the field will reset. Trust me...Thanos can't even do it)</h5>
+    </form>
+    <input type="number" id="player-choice" value="" >
+</div>
+     <br>
+    <button type="button" id="high-btn" >High</button>
+    <button type="button" id="low-btn" >Low</button>  
+   
+    <div id="Lost"></div>
+
+    <div id="Win"></div>
+
+
+    </body>
+</html>
+
