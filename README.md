@@ -4,7 +4,9 @@ The High-Low Game is a simple web application (using HTML5, CSS, and JS - no js 
 
 ## Installation
 
-To run the High-Low Game easily, you should have access to an IDE, I used VS Code and installed the Live Server extension within the IDE. However, it is possible to run the game locally without a server. If you choose to download VS Code, here is the link to get started:
+To run the High-Low Game easily, you should have access to an IDE, I used VS Code and installed the Live Server extension within the IDE. However, it is possible to run the game locally without a server. If you choose to download the file instead, click on the green button that says "Code", and click the line "Download ZiP". After downloading the zip file, open the file, and go to the Downloads section of your file system. Right click on the zipped file, then click the line "Extract All" and then Extract. Once the files are extracted, double click into the folder and click on "hilowgame".
+
+If you choose to download VS Code, here is the link to get started:
 
 [VSCode - https://code.visualstudio.com/download ](https://code.visualstudio.com/download)
 
